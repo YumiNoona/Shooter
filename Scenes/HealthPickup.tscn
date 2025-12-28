@@ -1,0 +1,44 @@
+[gd_scene load_steps=6 format=3 uid="uid://d2qtvaugexn2p"]
+
+[ext_resource type="Script" uid="uid://bwog1w4gybod2" path="res://Scripts/HealthPickup.gd" id="1_cx9q8"]
+[ext_resource type="Texture2D" uid="uid://b1anbsrbn3fac" path="res://Assets/Sprites/Heal.png" id="2_i2lef"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_5vx4k"]
+radius = 15.0
+
+[sub_resource type="Animation" id="Animation_float"]
+resource_name = "pulse"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0.5, 0.5), Vector2(0.6, 0.6), Vector2(0.5, 0.5)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_pickup"]
+_data = {
+&"pulse": SubResource("Animation_float")
+}
+
+[node name="HealthPickup" type="Area2D"]
+script = ExtResource("1_cx9q8")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("2_i2lef")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_5vx4k")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_pickup")
+}
+autoplay = "pulse"

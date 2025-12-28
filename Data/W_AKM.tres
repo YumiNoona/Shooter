@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="WeaponData" load_steps=4 format=3 uid="uid://iujlf4dgyf4r"]
+
+[ext_resource type="PackedScene" uid="uid://djjrr53cykr6u" path="res://Scenes/Bullet.tscn" id="1_i7rqx"]
+[ext_resource type="Texture2D" uid="uid://c36qxo4fx0w02" path="res://Assets/Sprites/Weapons/weapon_8_akm.png" id="2_i7rqx"]
+[ext_resource type="Script" uid="uid://b07a6gnc1a03x" path="res://Scripts/WeaponData.gd" id="3_6jpqj"]
+
+[resource]
+script = ExtResource("3_6jpqj")
+gun_sprite = ExtResource("2_i7rqx")
+gun_colour = Color(0.8, 0.1, 0.1, 1)
+buy_price = 150
+damage = 5.0
+delay_between_shots = 0.35
+fire_pos = Vector2(600, -10)
+bullet_scene = ExtResource("1_i7rqx")
+metadata/_custom_type_script = "uid://b07a6gnc1a03x"
