@@ -1,83 +1,58 @@
-📌 Shooter
+# 🔫 Shooter
 
-A 2D top-down shooter game made with Godot Engine (GDScript) 🎮
+A fast-paced top-down shooter built with **Godot 4.x**
 
-This project is a simple shoot ’em up style game where the player controls a character that can move, shoot weapons, collect pickups, and fight enemies. It’s ideal for learning Godot, experimenting with game mechanics, or expanding into a larger game.
+![Godot](https://img.shields.io/badge/Godot-4.x-blue)
+![GDScript](https://img.shields.io/badge/GDScript-2.0-blueviolet)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-🧠 Description
+---
 
-Shooter is a Godot game template written in GDScript featuring:
+## 📘 Overview
 
-Player movement and aiming
+**Shooter** is a top-down action game where the player fights waves of enemies using
+multiple weapons while managing health, movement, and positioning.
 
-Multiple weapon types
+The project focuses on **core shooter mechanics**, clean gameplay systems,
+and modular architecture, making it suitable for learning, prototyping,
+or expanding into a full survival or arcade shooter experience.
 
-Enemy spawning and AI
+---
 
-Collectibles (e.g., coins, health packs)
+## ✨ Features
 
-Simple HUD and game states
+### 🔫 Weapons & Combat
+- Multiple weapon types with unique fire behavior
+- Damage, fire-rate, and reload logic
+- Projectile-based shooting system
+- Visual feedback with hit effects and animations
 
-Sprite-based graphics and animations
+### 👾 Enemies & AI
+- Multiple enemy types with distinct behaviors
+- Enemy spawning system
+- Health and damage handling
+- Death animations and effects
 
-This repository contains all project assets, scenes, scripts, and configuration needed to open and run the game in Godot. It’s beginner-friendly and suited for modification and learning.
+### ❤️ Player & Survival Systems
+- Player movement and aiming
+- Health and damage system
+- Pickups for health and items
+- Simple survival-style progression
 
-🚀 Features
+### 🧩 Game Systems
+- Modular and reusable scripts
+- Data-driven weapon configuration
+- Component-based architecture
+- Scene-based workflow following Godot best practices
 
-✔ Top-down shooter gameplay
-✔ Multiple weapon support
-✔ Enemy behaviors and spawning
-✔ Health & damage systems
-✔ UI elements (health bar, pickups)
-✔ Modular scripts for easy extension
+---
 
-🧩 Project Structure
-Assets/            → Sprites, Sounds, Fonts  
-Scenes/            → Godot scene files  
-Scripts/           → GDScript gameplay logic  
-AutoLoad/          → Singleton scripts  
-Components/        → Reusable node components  
-Data/              → Weapon and config resources  
-Material/          → Shaders and materials  
-Shooter/           → Sub-project or sample scenes
-project.godot      → Main Godot project file
-.gitignore         → Files/folders skipped by Git
+## 🗂️ Project Structure
 
-📥 Getting Started
-✔ Requirements
-
-Godot Engine 4.x (recommended)
-
-Git (optional, for version control)
-
-Your favorite code editor (optional)
-
-🛠 Run Locally
-
-Clone the repo
-
-git clone https://github.com/YumiNoona/Shooter.git
-cd Shooter
-
-
-Open in Godot
-
-Launch Godot
-
-Click Import
-
-Select project.godot inside the repo
-
-Play / Test
-
-Run the project using the Play button in the Godot editor
-
-🎮 How to Play
-
-Move: WASD or arrow keys
-
-Shoot: Left mouse button
-
-Pick up items: Walk over pickups
-
-Survive waves of enemies
+Assets/ Sprites, audio, fonts
+Scenes/ Gameplay and UI scenes
+Scripts/ Core gameplay logic (GDScript)
+AutoLoad/ Global managers and singletons
+Components/ Reusable gameplay components
+Data/ Weapon and gameplay data resources
+Material/ Shaders and materials
