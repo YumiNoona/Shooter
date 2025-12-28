@@ -1,16 +1,22 @@
-# Godot 4+ specific ignores
-.godot/
-.nomedia
+# Godot import folders (cache)
+**/.import/
+*.import
 
-# Godot-specific ignores
-.import/
-export.cfg
-export_credentials.cfg
+# Godot export/preset configs
+export_presets.cfg
 
-# Imported translations (automatically generated from CSV files)
-*.translation
+# OS generated files
+.DS_Store
+Thumbs.db
 
-# Mono-specific ignores
-.mono/
-data_*/
-mono_crash.*.json
+# IDE / editor configs
+.vscode/
+.idea/
+
+# Godot temp/build
+*.tmp
+*.temp
+
+# Local cache (optional; only ignore if you can regenerate)
+.godot/cache/
+.godot/mono/
