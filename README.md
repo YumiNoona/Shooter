@@ -46,13 +46,3 @@ or expanding into a full survival or arcade shooter experience.
 - Scene-based workflow following Godot best practices
 
 ---
-
-## 🗂️ Project Structure
-
-Assets/ Sprites, audio, fonts
-Scenes/ Gameplay and UI scenes
-Scripts/ Core gameplay logic (GDScript)
-AutoLoad/ Global managers and singletons
-Components/ Reusable gameplay components
-Data/ Weapon and gameplay data resources
-Material/ Shaders and materials
